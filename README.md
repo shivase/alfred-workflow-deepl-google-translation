@@ -5,6 +5,8 @@
 クリップボード上の英語を日本語にしてブラウザ上に表示する alfred workflow です。
 簡易的に作ったものなので不備が多々ありますがご了承ください
 
+DeepLのアプリとは別に開いておきたい＋今後の拡張用途で作りました
+
 ![sample](sample.gif)
 
 ### 前提
@@ -27,13 +29,13 @@ alfred のワークフローより、インストールした DeepL-Translate(EN
 
 ![install1](install_image1.png)
 
-DeepLのAPIキーを`DEEPL_KEY`へ、 PROの方は`DEEPL_PRO`に`1`をいれて下さい
+DeepL の API キーを`DEEPL_KEY`へ、 PRO の方は`DEEPL_PRO`に`1`をいれて下さい
 
 ![install2](install_image2.png)
 
-#### Hotkeyの登録
+#### Hotkey の登録
 
-お好みでホットきーを設定して下さい
+お好みでホットキーを設定して下さい
 
 ### 使い方
 
