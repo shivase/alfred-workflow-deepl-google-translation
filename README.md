@@ -5,7 +5,7 @@
 クリップボード上の英語を日本語にしてブラウザ上に表示する alfred workflow です。
 簡易的に作ったものなので不備が多々ありますがご了承ください
 
-DeepL のアプリとは別に開いておきたい＋今後の拡張用途で作りました
+Google と DeepL に対応しており、二つの結果を同時に表示させる機能も追加しました
 
 ![sample](sample.gif)
 
@@ -18,7 +18,7 @@ DeepL のアプリとは別に開いておきたい＋今後の拡張用途で�
   同様に Google の API キーも取得しておいてください
   [Google Translate API を使って翻訳ボタンを作る \| JavaScript \| ドキュメント \| a\-blog cms developer](https://developer.a-blogcms.jp/document/javascript/google-translate-api.html)
 - jq
-- nkf
+- nkf  
   homebrew などでインストールしておいて下さい
 
 ## インストール手順
@@ -41,7 +41,11 @@ alfred のワークフローより、インストールした DeepL-Google-Trans
 
 ### Hotkey の登録
 
-お好みでホットキーを設定して下さい
+3 種類のホットキーを設定できるので、お好みでホットキーを設定して下さい
+
+- DeepL のみ
+- Google のみ
+- DeepL + Google 同時
 
 ## 使い方
 
