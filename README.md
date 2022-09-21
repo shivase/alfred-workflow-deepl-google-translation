@@ -1,51 +1,57 @@
-# Alfred workflow DeepL Translation
+# Alfred DeepL & Google Translation workflow
 
-[![download](https://img.shields.io/github/downloads/shivase/alfred-worlflow-deepl-translation/total)](https://github.com/shivase/alfred-worlflow-deepl-translation/releases)
+[![download](https://img.shields.io/github/downloads/shivase/alfred-worlflow-deepl-google-translation/total)](https://github.com/shivase/alfred-worlflow-deepl-google-translation/releases)
 
 クリップボード上の英語を日本語にしてブラウザ上に表示する alfred workflow です。
 簡易的に作ったものなので不備が多々ありますがご了承ください
 
-DeepLのアプリとは別に開いておきたい＋今後の拡張用途で作りました
+DeepL のアプリとは別に開いておきたい＋今後の拡張用途で作りました
 
 ![sample](sample.gif)
 
-### 前提
+## 前提
 
 - alfred Powerpack(有料)
 - DeepL API キー(有料 or 無料)  
   DeepL サイトで API キーを取得しておいて下さい。無料アカウントでも大丈夫ですが、月間の使用文字数に制限が出ます
-- jq  
+- Google Translate API キー
+  同様に Google の API キーも取得しておいてください
+  [Google Translate API を使って翻訳ボタンを作る \| JavaScript \| ドキュメント \| a\-blog cms developer](https://developer.a-blogcms.jp/document/javascript/google-translate-api.html)
+- jq
+- nkf
   homebrew などでインストールしておいて下さい
 
-### インストール手順
+## インストール手順
 
 ### ダウンロード
 
-[release](https://github.com/shivase/alfred-worlflow-deepl-translation/releases)より DeepL-Translate(EN2JA).alfredworkflow をダウンロードし、alfred にインストールして下さい
+[release](https://github.com/shivase/alfred-worlflow-deepl-google-translation/releases)より DeepL-Google-Translator.alfredworkflow をダウンロードし、alfred にインストールして下さい
 
-#### API キーの登録
+### API キーの登録
 
-alfred のワークフローより、インストールした DeepL-Translate(EN2JA)を選択し、右上の変数コンフィグを選びます
+alfred のワークフローより、インストールした DeepL-Google-Translator を選択し、右上の変数コンフィグを選びます
 
 ![install1](install_image1.png)
 
-DeepL の API キーを`DEEPL_KEY`へ、 PRO の方は`DEEPL_PRO`に`1`をいれて下さい
+- DeepL の API キーを`DEEPL_KEY`にいれて下さい
+- DeepL PRO の方は`DEEPL_PRO`に`1`をいれて下さい
+- Google の API キーを`GOOGLE_KEY`にいれて下さい
 
 ![install2](install_image2.png)
 
-#### Hotkey の登録
+### Hotkey の登録
 
 お好みでホットキーを設定して下さい
 
-### 使い方
+## 使い方
 
 クリップボードの値をそのまま変換するので、変換したい文字を選択してクリップボードにコピーし、決めたホットキーを押すだけです。あとは自動的にブラウザが開きます
 
-### やりたいこと・やること
+## やりたいこと・やること
 
 - JA -> EN 変換
 
-### Thanks
+## Thanks
 
 html 部分は以下を参考にしています
 
