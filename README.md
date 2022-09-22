@@ -11,14 +11,13 @@ Google と DeepL に対応しており、二つの結果を同時に表示させ
 
 ## 前提
 
-- alfred Powerpack(有料)
+- alfred 5 & Powerpack(有料)
 - DeepL API キー(有料 or 無料)  
   DeepL サイトで API キーを取得しておいて下さい。無料アカウントでも大丈夫ですが、月間の使用文字数に制限が出ます
-- Google Translate API キー
-  同様に Google の API キーも取得しておいてください
+- Google Translate API キー  
+  同様に Google の API キーも取得しておいてください  
   [Google Translate API を使って翻訳ボタンを作る \| JavaScript \| ドキュメント \| a\-blog cms developer](https://developer.a-blogcms.jp/document/javascript/google-translate-api.html)
-- jq
-- nkf  
+- jq & nkf  
   homebrew などでインストールしておいて下さい
 
 ## インストール手順
@@ -29,13 +28,11 @@ Google と DeepL に対応しており、二つの結果を同時に表示させ
 
 ### API キーの登録
 
-alfred のワークフローより、インストールした DeepL-Google-Translator を選択し、右上の変数コンフィグを選びます
+ワークフロー登録後、以下のような画面が出力されますので、記載に従ってAPIキーなどをいれて下さい
 
 ![install1](install_image1.png)
 
-- DeepL の API キーを`DEEPL_KEY`にいれて下さい
-- DeepL PRO の方は`DEEPL_PRO`に`1`をいれて下さい
-- Google の API キーを`GOOGLE_KEY`にいれて下さい
+途中でAPIキーなどを変えたい場合は、ワークフロー画面の左上に`Configure Workflow`というのがあるので、そこをクリックして下さい
 
 ![install2](install_image2.png)
 
